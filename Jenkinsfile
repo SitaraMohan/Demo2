@@ -12,14 +12,14 @@ pipeline {
         stage('Build') {
             steps {
                 // Build the project using Maven
-                bat 'mvn clean package' // Use 'bat' for Windows
+                bat 'clean package' // Use 'bat' for Windows
             }
         }
 
         stage('Test') {
             steps {
                 // Run tests
-                bat 'mvn test' // Use 'bat' for Windows
+                bat 'test' // Use 'bat' for Windows
             }
         }
 
