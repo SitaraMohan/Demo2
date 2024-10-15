@@ -1,13 +1,7 @@
 pipeline {
     agent any
 
-    tools {
-        // Define the JDK and Maven versions
-        jdk 'JDK_17' // Make sure this matches the JDK name in Jenkins global tool configuration
-        maven 'Maven_3.9.9' // Make sure this matches the Maven name in Jenkins global tool configuration
-    }
-
-    stages {
+     stages {
         stage('Checkout') {
             steps {
                 // Checkout code from SCM
